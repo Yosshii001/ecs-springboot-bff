@@ -15,5 +15,5 @@ COPY --from=build-env \
 MAINTAINER junichi02
 EXPOSE 80
 
-CMD java -jar -Dspring.profiles.active=production \
+CMD java -jar -Dspring.profiles.active=prod \
  /var/local/ecs-springboot-bff/ecs-springboot-bff-0.0.1-SNAPSHOT.jar
